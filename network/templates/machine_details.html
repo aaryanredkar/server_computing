@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Details</title>
+</head>
+<body>
+    <h1>{{ machine['hostname'] }} Details</h1>
+    <p>GPU: {{ machine['gpu_usage'] }}</p>
+    <p>CPU: {{ machine['cpu_usage'] }}%</p>
+    <p>Status: {{ machine['machine_state'] }}</p>
+    <!-- Additional details like top processes or SSH sessions can be added here -->
+</body>
+</html>
